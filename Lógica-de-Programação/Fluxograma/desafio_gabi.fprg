@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Abreu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-06 12:57:02 "/>
+        <attribute name="created" value="QWJyZXU7REVTS1RPUC1UUzVNR0FJOzIwMjItMDUtMDU7IjA5OjE5OjI0ICI7Mjc4MA=="/>
+        <attribute name="edited" value="QWJyZXU7REVTS1RPUC1UUzVNR0FJOzIwMjItMDUtMDY7IjEyOjU3OjAyICI7NDsyODg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, num2, total" type="Real" array="False" size=""/>
+            <declare name="again" type="String" array="False" size=""/>
+            <output expression="&quot;Voc&#234; deseja fazer um c&#225;lculo (s/n)?&quot;" newline="True"/>
+            <input variable="again"/>
+            <while expression="again=&quot;s&quot;">
+                <output expression="&quot;Primeiro n&#250;mero&quot;" newline="True"/>
+                <input variable="num"/>
+                <output expression="&quot;Segundo n&#250;mero&quot;" newline="True"/>
+                <input variable="num2"/>
+                <assign variable="total" expression="num+num2"/>
+                <output expression="&quot;O total &#233;: &quot; &amp; total" newline="True"/>
+                <output expression="&quot;Fazer outro c&#225;lculo?&quot;" newline="True"/>
+                <input variable="again"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
